@@ -1,0 +1,30 @@
+  470  pwd
+  471  ls
+  472  touch TestFile
+  473  mv Testfile Testfile2
+  474  rm Testfile2
+  475  mkdir TestDirectory
+  476  touch TestDirectory/Test.txt
+  477  rmdir TestDirectory
+  478  rm TestDirectory/Test.txt
+  479  rmdir TestDirectory
+  480  echo "My first line." > test.txt
+  481  cat test.txt 
+  482  echo "My second line" >> test.txt
+  483  ls / >> ListRootDir.txt
+  484  cat ListRootDir.txt 
+  485  mkdir TestWild
+  486  cd TestWild
+  487  touch File1.txt
+  488  touch File2.txt
+  489  touch File3.txt
+  490  touch File4.txt
+  491  touch File1.csv
+  492  touch File2.csv
+  493  touch File3.csv
+  494  touch File4.csv
+  495  touch Anotherfile.csv
+  496  touch Anotherfile.txt
+  497  ls
+  498  ls | wc -l
+  499  history | tail -n 30 > For_Daniel_Wildcard.txt

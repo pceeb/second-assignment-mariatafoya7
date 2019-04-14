@@ -1,0 +1,75 @@
+  664  find . -name "File1.txt"
+  665  find . -name "*.txt"
+  666  find . -maxdepth 2 -name "*.txt"
+  667  find . -maxdepth 2 -not -name "*.txt"
+  668  find . -type d 
+  669  find . -type exec ls -s {} \; | sort -n| head -10
+  670  find . -type f -exec ls -s {} \; | sort -n | head -10
+  671  history | tail -n 30 > For_Daniel_find.txt
+  672  ls
+  673  less For_Daniel_find.txt 
+  674  qrsh
+  675  cd introscicomp2014/
+  676  cd UNIX/
+  677  cd Data/
+  678  cd Temperatures/
+  679  cd introscicomp2014/
+  680  cd UNIX/
+  681  cd D
+  682  cd Data/
+  683  ls
+  684  cd fasta/
+  685  ls
+  686  cd ../
+  687  ls
+  688  rm darwincommands.txt 
+  689  cd ~
+  690  cd introscicomp2014/
+  691  cd UNIX/
+  692  ls
+  693  cd Data/
+  694  cd fasta/
+  695  head -n3 407228326.fasta 
+  696  wc -l *.fasta
+  697  tail -n+2 407228326.fasta 
+  698  tail -n+2 407228326.fasta | tr -d "\n" 
+  699  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
+  700  tail -n+2 407228412.fasta | tr -d "\n" | wc -c
+  701  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+  702  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  703  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGC" 
+  704  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  705  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  706  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+  707  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+  708  cd ../..
+  709  cd D
+  710  cd Data/
+  711  head -n 13899 otoos10.txt | tail -n+265 > darwin.txt 
+  712  less darwin.txt 
+  713  head -n 13899 otoos10.txt | tail -n+265 > darwin.txt | grep -o "evolution" | wc -l
+  714  head -n 13899 otoos10.txt | tail -n+265 > darwin.txt | grep -o "evolved" | wc -l
+  715  grep -o "evolution" | wc -l
+  716  grep -o "evolution" darwin.txt | wc -l
+  717  grep -o "evolved" darwin.txt | wc -l
+  718  grep -o "natural selection" darwin.txt | wc -l
+  719  grep -o "Wallace" darwin.txt | wc -l
+  720  history | tail -n 10 > darwincommands.txt
+  721  cd
+  722  cd introscicomp2014/
+  723  cd UNIX/
+  724  cd Data/
+  725  ls
+  726  cd Temperatures/
+  727  grep -n 180 [0-3] *.csv | grep -n [01-01] | grep -n TMAX 
+  728  grep -n 180 [0-3] *.csv | grep -n [01-01] | grep -w TMAX 
+  729  grep -n 1800 *.csv | grep -w "TMAX" | grep -w "18000101"
+  730  grep -n 180 [0-3] *.csv | grep -w "180[0-3]0101,TMAX"
+  731  man cut
+  732  grep -n 1800 *.csv | grep -w "TMAX" | cut -d : -f 4 | sort -n | tail "TMAX" 
+  733  grep -n 1800 *.csv | grep -w "TMAX" | cut -d : -f 4 | sort -n 
+  734  grep -n 1800 *.csv | grep -w "TMAX" | cut -d : -f 4 | sort -n | tail -F "TMAX"
+  735  history | tail -n 50 > For_Daniel_realdata.txt
+  736  less For_Daniel_realdata.txt 
+  737  rm For_Daniel_realdata.txt 
+  738  history | tail -n 75 > For_Daniel_realdata.txt
