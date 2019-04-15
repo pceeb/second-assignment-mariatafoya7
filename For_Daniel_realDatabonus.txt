@@ -1,0 +1,10 @@
+  828  grep -i -w "TMAX" 1800.csv | grep "18000101" | cut -d "," -f 3 | sort -n | tail -n1
+  829  grep "18000101" 1800.csv | grep -i -w "TMAX" | cut -d "," -f 3 | tail -n1
+  830  grep "18000101" 1800.csv | grep -i -w 'TMAX' | cut -d "," -f 3 | tail -n1
+  831  grep -i -w "TMAX" 1800.csv | grep "18000101" | cut -d "," -f 3 | sort -n | tail -n1
+  832  grep "18000101" 1800.csv | grep -i -w 'TMAX' | cut -d "," -f3 | tail -n1
+  833* 
+  834  grep -i -w "TMAX" 1800.csv | grep "18000101" | cut -d "," -f4 | sort -n | tail -n1
+  835  grep -i -w "TMAX" 1800.csv | grep "18000105" | cut -d "," -f4 | sort -n | tail -n1
+  836  grep -i -w "TMAX" 1800.csv | grep "18000205" | cut -d "," -f4 | sort -n | tail -n1
+  837  history | tail -n 10 > For_Daniel_realDatabonus.txt
